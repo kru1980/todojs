@@ -28,7 +28,6 @@ function createTodoItem(title) {
     listItem.appendChild(editButton);
     listItem.appendChild(deleteButton);
 
-    console.log(listItem);
     return listItem;
 }
 
@@ -38,7 +37,9 @@ function addTodoItem(event) {
     if (addInput.value === '') {
         return alert('Необходимо ввести название задачи.');
     }
-    const listItem = createTodoItem(addInput.value);
+    const todoItem = createTodoItem(addInput.value);
+    todoList.appendChild(todoItem);
+    addInput.value = '';
 }
 
 const todoForm = document.getElementById('todo-form');
