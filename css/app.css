@@ -181,3 +181,7 @@ header h1 {
 #todo-form button {
     margin-left: 10px;
 }
+
+label{
+    width: 450px;
+}
